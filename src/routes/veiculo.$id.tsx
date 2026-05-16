@@ -2,6 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { useState } from "react";
 import { ShieldCheck, Calendar, Gauge, Settings2, Fuel, Palette, DoorOpen, Phone, MessageCircle, MapPin, BadgeCheck, Wrench, FileCheck, ChevronLeft, ChevronRight } from "lucide-react";
 import { SiteLayout } from "@/components/site/SiteLayout";
+import { CarCard } from "@/components/site/CarCard";
 import { findCar, cars, formatBRL, formatKm } from "@/data/cars";
 
 export const Route = createFileRoute("/veiculo/$id")({
