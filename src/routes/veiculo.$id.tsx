@@ -199,7 +199,3 @@ function Spec({ I, l, v }: { I: typeof Calendar; l: string; v: string }) {
   );
 }
 
-import { CarCard } from "@/components/site/CarCard";
-function CarMini({ c }: { c: ReturnType<typeof findCar> & {} }) {
-  return <CarCard car={c!} />;
-}
