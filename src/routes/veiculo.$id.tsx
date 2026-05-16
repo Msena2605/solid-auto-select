@@ -179,7 +179,7 @@ function VehiclePage() {
         <h2 className="font-display text-2xl font-bold tracking-tight">Você também pode gostar</h2>
         <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {cars.filter((c) => c.id !== car.id).slice(0, 3).map((c) => (
-            <CarMini key={c.id} c={c} />
+            <CarCard key={c.id} car={c} />
           ))}
         </div>
       </section>
